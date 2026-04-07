@@ -14,7 +14,7 @@
 ### Prerequisites
 - Python 3.11+
 - Node.js 20+
-- OpenAI API Key
+- OpenAI API Key or Ollama
 
 ### 1. Clone & Setup
 
