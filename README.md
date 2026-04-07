@@ -6,33 +6,8 @@
 
 ## 🏗️ Architecture
 
-```
-┌─────────────────────────────────────────────────────────┐
-│                    React + Vite Frontend                │
-│  Dashboard · Report Card · Analysis · Roadmap ·        │
-│  Practice · Exam Prep · AI Chatbot · Badges             │
-└────────────────────┬────────────────────────────────────┘
-                     │ HTTP / JWT
-┌────────────────────▼────────────────────────────────────┐
-│              Flask API Gateway (JWT Auth)               │
-│  /auth  /report  /analysis  /roadmap                   │
-│  /practice  /chatbot  /gamification                     │
-└────────┬───────────────────────────┬────────────────────┘
-         │                           │
-┌────────▼──────────┐   ┌───────────▼────────────────────┐
-│  PostgreSQL DB    │   │   OpenAI GPT-4o-mini            │
-│  (User data,      │   │   ├ Report Card Extraction      │
-│   reports,        │   │   ├ AI Analysis Engine          │
-│   roadmaps,       │   │   ├ Roadmap Generator           │
-│   sessions,       │   │   ├ Practice Q&A Generator      │
-│   badges)         │   │   ├ Answer Evaluator            │
-└───────────────────┘   │   ├ AI Tutor Chatbot           │
-                        │   └ Revision Material           │
-┌───────────────────┐   └────────────────────────────────┘
-│  Redis (Cache /   │
-│  Session store)   │
-└───────────────────┘
-```
+<img width="917" height="614" alt="Screenshot 2026-04-07 005109" src="https://github.com/user-attachments/assets/7efa7ac5-9c7d-4665-b5f1-e754eeb46a0f" />
+
 
 ## 🚀 Quick Start (Local Dev — No Docker)
 
