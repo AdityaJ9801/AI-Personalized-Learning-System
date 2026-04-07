@@ -1,0 +1,87 @@
+# ───────────────────────────────────────────────────────────────
+# EduAI - .gitignore
+# Covers Python (Backend), Node.js (Frontend), Docker, and IDEs
+# ───────────────────────────────────────────────────────────────
+
+# ── Python / Backend ───────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Database files
+*.sqlite3
+*.db
+eduai_dev.db
+
+# Flask/Gunicorn logs
+*.log
+gunicorn_access.log
+gunicorn_error.log
+
+# Uploads
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# ── Node.js / Frontend ──────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# ── Environment & Secrets ──────────────────────────────────────
+.env
+.env.production
+.env.local
+.env.*.local
+!.env.example
+
+# ── Docker ──────────────────────────────────────────────────────
+.dockerignore
+docker-volume/
+postgres_data/
+redis_data/
+
+# ── IDEs & OS ──────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Documentation / Misc ───────────────────────────────────────
+.system_generated/
+*.webp
+*.png
+*.jpg
